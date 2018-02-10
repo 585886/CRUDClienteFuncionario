@@ -1,4 +1,4 @@
-# CRUD Cliente, Funcionario
+# CRUD Cliente, Funcionário
 
 O github por padrão adiciona o nome "master" como complemento, no nome da pasta raiz, ele deve ser retirado para que o sistema
 funcione corretamenta.
