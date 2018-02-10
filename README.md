@@ -1,7 +1,7 @@
 # CRUD Cliente, Funcionario
 
 O github por padrão adiciona o nome "master" como complemento, no nome da pasta raiz, ele deve ser retirado para que o sistema
-abra corretamenta.
+funcione corretamenta.
 
 Requisito: PHP 5+.
 
