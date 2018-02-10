@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 10-Fev-2018 às 00:25
+-- Generation Time: 10-Fev-2018 às 20:48
 -- Versão do servidor: 5.7.19
--- PHP Version: 7.1.9
+-- PHP Version: 5.6.31
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -30,22 +30,22 @@ SET time_zone = "+00:00";
 
 DROP TABLE IF EXISTS `clientes`;
 CREATE TABLE IF NOT EXISTS `clientes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) DEFAULT NULL,
-  `CPF` varchar(14) DEFAULT NULL,
-  `dataNascimento` date DEFAULT NULL,
-  `endereco` varchar(60) DEFAULT NULL,
-  `bairro` varchar(20) DEFAULT NULL,
-  `CEP` varchar(9) DEFAULT NULL,
-  `cidade` varchar(50) DEFAULT NULL,
-  `telefoneFixo` varchar(14) DEFAULT NULL,
-  `celular` varchar(15) DEFAULT NULL,
-  `estado` varchar(50) DEFAULT NULL,
-  `ie` varchar(15) DEFAULT NULL,
-  `modified` date DEFAULT NULL,
-  `created` date DEFAULT NULL,
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `CPF` varchar(14) NOT NULL,
+  `dataNascimento` date NOT NULL,
+  `endereco` varchar(60) NOT NULL,
+  `bairro` varchar(20) NOT NULL,
+  `CEP` varchar(9) NOT NULL,
+  `cidade` varchar(50) NOT NULL,
+  `telefoneFixo` varchar(14) NOT NULL,
+  `celular` varchar(15) NOT NULL,
+  `estado` varchar(50) NOT NULL,
+  `ie` varchar(15) NOT NULL,
+  `modified` date NOT NULL,
+  `created` date NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -55,19 +55,19 @@ CREATE TABLE IF NOT EXISTS `clientes` (
 
 DROP TABLE IF EXISTS `funcionarios`;
 CREATE TABLE IF NOT EXISTS `funcionarios` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `nome` varchar(50) DEFAULT NULL,
-  `CPF` varchar(14) DEFAULT NULL,
+  `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT,
+  `nome` varchar(50) NOT NULL,
+  `CPF` varchar(14) NOT NULL,
   `dataNascimento` date NOT NULL,
-  `endereco` varchar(50) DEFAULT NULL,
-  `bairro` varchar(30) DEFAULT NULL,
-  `CEP` varchar(9) DEFAULT NULL,
+  `endereco` varchar(50) NOT NULL,
+  `bairro` varchar(30) NOT NULL,
+  `CEP` varchar(9) NOT NULL,
   `created` date NOT NULL,
-  `cidade` varchar(50) DEFAULT NULL,
-  `telefoneFixo` varchar(14) DEFAULT NULL,
+  `cidade` varchar(50) NOT NULL,
+  `telefoneFixo` varchar(14) NOT NULL,
   `celular` varchar(15) NOT NULL,
-  `estado` varchar(20) DEFAULT NULL,
-  `RG` varchar(7) DEFAULT NULL,
+  `estado` varchar(20) NOT NULL,
+  `RG` varchar(7) NOT NULL,
   `modified` date NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
