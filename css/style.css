@@ -1,0 +1,31 @@
+html,body{
+    width:100%;
+    height:100%;
+}
+.titulo{
+text-align:center;
+font-family:'Times New Roman', Times, serif;
+font-weight:bolder;
+color:white;
+}
+.cliente a {
+    width:200px;
+    display:block;
+    margin:auto;
+    padding:20px;
+}
+.cliente p{
+    text-align: center;
+}
+
+.cliente a:hover{
+    background-color:#27ae60;
+}
+footer{
+    background:#bdc3c7;width:100%;height:20%;
+    top:530px;position:fixed;
+}
+footer ,a {
+    color:black;
+    text-align: center;
+}
