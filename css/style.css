@@ -21,9 +21,13 @@ color:white;
 .cliente a:hover{
     background-color:#27ae60;
 }
-footer{
-    background:#bdc3c7;width:100%;height:20%;
-    top:530px;position:fixed;
+.footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Mesma Altura do Rodapé */
+   background:white;
+   text-align:center;
 }
 footer ,a {
     color:black;
